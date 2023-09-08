@@ -4,7 +4,7 @@ body {
 .app-container {
   max-width: 600px;
   max-height: 400px;
-  background: rgb(255, 255, 255, 0.6);
+  background: rgba(246, 203, 203, 0.6);
   border: 1px solid grey;
   border-radius: 8px;
   padding: 10px;
@@ -15,7 +15,8 @@ body {
   font-weight: 600;
   margin: 10px auto;
 }
-#select-city {
+#select {
+  display: block;
   width: 500px;
   margin: 20px 40px;
 }
