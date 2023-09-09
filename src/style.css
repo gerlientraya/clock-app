@@ -15,10 +15,12 @@ body {
   font-weight: 600;
   margin: 10px auto;
 }
-#select {
+#cities {
   display: block;
   width: 500px;
   margin: 20px 40px;
+  padding: 10px 30px;
+  border-radius: 8px;
 }
 li {
   list-style: none;
