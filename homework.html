@@ -20,8 +20,20 @@
           if (event.target.value === "madrid") {
             let madridTime = moment()
               .tz("Europe/Madrid")
-              .format("[It is]dddd, MMMM D, YYYY hh:mm a [in Europe/Madrid]");
-            console.log(madridTime);
+              .format("[It is ]dddd, MMMM D, YYYY hh:mm a [in Europe/Madrid]");
+            alert(madridTime);
+          }
+          if (event.target.value === "manila") {
+            let manilaTime = moment()
+              .tz("Asia/Manila")
+              .format("[It is ]dddd, MMMM D, YYYY hh:mm a [in Asia/Manila]");
+            alert(manilaTime);
+          }
+          if (event.target.value === "lisbon") {
+            let lisbonTime = moment()
+              .tz("Europe/Lisbon")
+              .format("[It is ]dddd, MMMM D, YYYY hh:mm a [in Europe/Lisbon]");
+            alert(lisbonTime);
           }
         }
       }
