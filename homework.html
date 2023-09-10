@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.js"></script>
+    <title>Dropdown</title>
+  </head>
+  <body>
+    <select name="cities" id="cities">
+      <option value=" ">Select a city</option>
+      <option value="madrid">🇪🇸 Madrid</option>
+      <option value="manila">🇵🇭 Manila</option>
+      <option value="lisbon">🇵🇹 Lisbon</option>
+    </select>
+    <script>
+      function showDateAndTime(event) {
+        if (event.target.value.length > 0) {
+          if (event.target.value === "Madrid") {
+            let madridTime = moment()
+              .tz("Europe/Madrid")
+              .format("[It is]dddd, MMMM D, YYYY hh:mm a [in Europe/Madrid]");
+            console.log(madridTime);
+          }
+        }
+      }
+      let citiesSelected = document.querySelector("#cities");
+      citiesSelected.addEventListener("change", showDateAndTime);
+    </script>
+  </body>
+</html>
