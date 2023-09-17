@@ -18,14 +18,14 @@
   <body>
     <div class="container">
       <h1>World Clock</h1>
-      <select>
+      <select id="city">
         <option value="">Select a city..</option>
-        <option value="">Manila</option>
-        <option value="">Madrid</option>
-        <option value="">Lisbon</option>
+        <option value="Asia/Manila">Manila</option>
+        <option value="Europe/Madrid">Madrid</option>
+        <option value="Europe/Lisbon">Lisbon</option>
       </select>
 
-      <div>
+      <div id="cities">
         <div class="city" id="copenhagen">
           <div>
             <h2>Copenhagen 🇩🇰</h2>
@@ -33,8 +33,6 @@
           </div>
           <div class="time"></div>
         </div>
-      </div>
-      <div>
         <div class="city" id="singapore">
           <div>
             <h2>Singapore 🇸🇬</h2>
