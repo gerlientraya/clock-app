@@ -34,9 +34,12 @@ function updateTime() {
     .tz("Asia/Singapore")
     .format("hh:mm:ss [<small>]A[</small>]");
 }
-
+//select funtionality
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.split("/")[1];
   let cityime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
@@ -49,10 +52,10 @@ function updateCity(event) {
   <div class="time">${cityime.format("hh:mm:ss [<small>]A[</small>]")}</div>
 </div>`;
 }
+let citiesSelectElement = document.querySelector("#city");
+citiesSelectElement.addEventListener("change", updateCity);
 updateTime();
 setInterval(updateTime, 1000);
 
-//select funtionality
-
-let citiesSelectElement = document.querySelector("#city");
-citiesSelectElement.addEventListener("change", updateCity);
+updateCity();
+setInterval(updateCity, 1000);
