@@ -9,9 +9,10 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/style.css" />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
-    <link rel="stylesheet" href="src/style.css">
     <title>Clock App</title>
   </head>
   <body>
@@ -23,32 +24,32 @@
         <option value="">Madrid</option>
         <option value="">Lisbon</option>
       </select>
-      
+
       <div>
-        <div class="city">
+        <div class="city" id="copenhagen">
           <div>
             <h2>Copenhagen 🇩🇰</h2>
-            <div class="date">September 10, 2023</div>
+            <div class="date"></div>
           </div>
-          <div class="time">20:20:20 <small>PM</small</div>
-        </div> 
+          <div class="time"></div>
+        </div>
       </div>
       <div>
-        <div class="city">
+        <div class="city" id="singapore">
           <div>
             <h2>Singapore 🇸🇬</h2>
-            <div class="date">September 10, 2023</div>
+            <div class="date"></div>
           </div>
-          <div class="time">03:22:22 <small>PM</small</div>
-        </div> 
-      </div>    
+          <div class="time"></div>
+        </div>
+      </div>
     </div>
     <footer>
-        Coded with ❤️ by Gerlie Traya and is
+      Coded with ❤️ by Gerlie Traya and is
       <a href="https://github.com/gerlientraya/clock-app" target="_blank">
         open sourced on GitHub</a
       >
-    </footer>  
+    </footer>
     <script src="src/app.js"></script>
   </body>
 </html>
